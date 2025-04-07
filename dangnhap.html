@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .heading {
+            color: #14919B;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #0AD1C8;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0AD1C8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .google-btn {
+            background-color: #4285F4;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .message {
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: #FF4C4C;
+            background-color: #ffe6e6;
+        }
+
+        .success {
+            color: #0AD1C8;
+            background-color: #e6f9f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="heading">Đăng nhập</h2>
+        
+        <!-- Thêm các message error/success tại đây -->
+        <!-- <div class="message error">Lỗi đăng nhập</div> -->
+        <!-- <div class="message success">Đăng nhập thành công</div> -->
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    name="username" 
+                    placeholder="Tên đăng nhập"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Mật khẩu"
+                    required
+                >
+            </div>
+
+            <button type="submit">Đăng nhập</button>
+            
+            <button type="button" class="google-btn">
+                Đăng nhập với Google
+            </button>
+        </form>
+    </div>
+</body>
+</html>
