@@ -1,1 +1,2 @@
-# Nhom16_BaiCuoiKi
+# DoAnChuyenNghanh-Frontend
+Giao diện đồ án chuyên nghành 
